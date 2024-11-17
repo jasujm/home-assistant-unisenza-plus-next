@@ -26,8 +26,6 @@ anyio==4.3.0
     # via httpx
 astral==2.2
     # via homeassistant
-astroid==3.1.0
-    # via pylint
 async-interrupt==1.1.1
     # via homeassistant
 atomicwrites-homeassistant==1.4.1
@@ -96,8 +94,6 @@ dbus-fast==2.21.1
     #   bluetooth-adapters
 dict-deep==4.1.2
     # via pyupgw
-dill==0.3.8
-    # via pylint
 envs==1.4
     # via pycognito
 execnet==2.0.2
@@ -138,8 +134,6 @@ ifaddr==0.2.0
     # via homeassistant
 iniconfig==2.0.0
     # via pytest
-isort==5.13.2
-    # via pylint
 jinja2==3.1.3
     # via homeassistant
 jmespath==1.0.1
@@ -150,14 +144,16 @@ lru-dict==1.3.0
     # via homeassistant
 markupsafe==2.1.5
     # via jinja2
-mccabe==0.7.0
-    # via pylint
 mock-open==1.4.0
     # via pytest-homeassistant-custom-component
 multidict==6.0.5
     # via
     #   aiohttp
     #   yarl
+mypy==1.13.0
+    # via -r requirements.in
+mypy-extensions==1.0.0
+    # via mypy
 numpy==1.26.0
     # via pytest-homeassistant-custom-component
 orjson==3.9.15
@@ -173,8 +169,6 @@ paho-mqtt==1.6.1
     #   pyupgw
 pipdeptree==2.15.1
     # via pytest-homeassistant-custom-component
-platformdirs==4.2.0
-    # via pylint
 pluggy==1.4.0
     # via pytest
 pycognito==2024.2.0
@@ -187,8 +181,6 @@ pyjwt[crypto]==2.8.0
     # via
     #   homeassistant
     #   pycognito
-pylint==3.1.0
-    # via -r requirements.in
 pylint-per-file-ignores==1.3.2
     # via pytest-homeassistant-custom-component
 pyopenssl==24.0.0
@@ -245,7 +237,7 @@ python-slugify==8.0.4
     # via homeassistant
 pytz==2024.1
     # via astral
-pyupgw==0.12
+pyupgw @ git+https://github.com/jasujm/pyupgw.git@815efd0fd3418500e00031eb379be8ae2ddaddd5
     # via -r requirements.in
 pyyaml==6.0.1
     # via homeassistant
@@ -278,13 +270,12 @@ termcolor==2.4.0
     # via pytest-sugar
 text-unidecode==1.3
     # via python-slugify
-tomlkit==0.12.4
-    # via pylint
 tqdm==4.66.2
     # via pytest-homeassistant-custom-component
 typing-extensions==4.10.0
     # via
     #   homeassistant
+    #   mypy
     #   pydantic
     #   sqlalchemy
 tzdata==2024.1

@@ -1,4 +1,4 @@
-pyupgw>=0.12
+git+https://github.com/jasujm/pyupgw.git@815efd0fd3418500e00031eb379be8ae2ddaddd5
 homeassistant>=2024.2
 ruff
 mypy

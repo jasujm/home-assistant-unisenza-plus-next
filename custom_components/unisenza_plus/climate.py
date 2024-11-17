@@ -101,7 +101,7 @@ class UnisenzaPlusClimateEntity(ClimateEntity):
 
     @property
     def unique_id(self):
-        return self._device.get_serial_number()
+        return self._device.get_serial_number() or self._device.get_euid()
 
     @property
     def device_info(self):
