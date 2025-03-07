@@ -10,7 +10,7 @@
     "homekit": {},
     "iot_class": "cloud_push",
     "loggers": ["pyupgw"],
-    "requirements": ["pyupgw @ git+https://github.com/jasujm/pyupgw.git@815efd0fd3418500e00031eb379be8ae2ddaddd5"],
+    "requirements": ["pyupgw @ git+https://github.com/jasujm/pyupgw.git@95056d21fca218f99c1ab5b477a38a88d1f36888"],
     "ssdp": [],
     "zeroconf": []
 }
