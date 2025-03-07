@@ -165,5 +165,5 @@ async def async_setup_entry(
         UnisenzaPlusClimateEntity(device, gateway.get_mac_address())
         for (gateway, device) in client.get_devices()
         if device.get_type() == DeviceType.HVAC
-        and device.get_serial_number() is not None
+        and (device.get_serial_number() is not None or device.get_euid() is not None)
     )
